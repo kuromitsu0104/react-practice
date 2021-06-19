@@ -16,7 +16,7 @@ import TopPage from './pages/TopPage'
 
 const theme = unstable_createMuiStrictModeTheme()
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Router>

@@ -1,8 +1,7 @@
 import React from 'react'
-
 import DashboardTemplate from '../templates/DashboardTemplate'
 
-const AboutPage: React.FC = () => {
+const AboutPage = () => {
   return (
     <DashboardTemplate title="アバウトページのタイトル">
       <>アバウトページの内容</>
