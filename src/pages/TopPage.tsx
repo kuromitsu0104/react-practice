@@ -1,5 +1,5 @@
 import React from 'react'
-import DashboardTemplate from '../templates/DashboardTemplate'
+import DashboardTemplate from '../components/templates/DashboardTemplate'
 
 const TopPage = () => {
   return (
