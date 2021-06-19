@@ -13,8 +13,46 @@ import {
 
 import AboutPage from './pages/AboutPage'
 import TopPage from './pages/TopPage'
+import { blue } from '@material-ui/core/colors'
 
-const theme = unstable_createMuiStrictModeTheme()
+const theme = unstable_createMuiStrictModeTheme({
+  typography: {
+    button: {
+      textTransform: "none",
+      fontSize: 12,
+    }
+  },
+  props: {
+    MuiTextField: {
+      variant: "outlined"
+    },
+    MuiCheckbox: {
+      color: "primary"
+    },
+    MuiRadio: {
+      color: "primary"
+    },
+    MuiSwitch: {
+      color: "primary"
+    },
+    MuiList: {
+      dense: false
+    },
+    MuiTable: {
+      size: "small"
+    },
+  },
+  palette: {
+    primary: {
+      main: blue[500]
+    }
+  },
+  mixins: {
+    toolbar: {
+      minHeight: 42
+    }
+  }
+})
 
 const App = () => {
   return (
