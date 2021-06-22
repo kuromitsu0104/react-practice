@@ -13,7 +13,7 @@ import {
 /* eslint-disable */
 
 import AboutPage from './pages/AboutPage'
-import TopPage from './pages/TopPage'
+import Dashboard from './pages/Dashboard'
 import { blue } from '@material-ui/core/colors'
 
 const theme = unstable_createMuiStrictModeTheme({
@@ -60,7 +60,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Router>
         <Switch>
-          <Route path="/" component={TopPage} exact />
+          <Route path="/" component={Dashboard} exact />
           <Route path="/about" component={AboutPage} exact />
         </Switch>
       </Router>
